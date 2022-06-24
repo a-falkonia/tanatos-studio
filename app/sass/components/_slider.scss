@@ -1,0 +1,96 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    padding-top: 120px;
+    font-size: 70px;
+    font-weight: 800;
+
+    span {
+      color: $accent;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      padding-top: 100px;
+      font-size: 56px;
+    }
+    @media (max-width: $breakpoint-md) {
+      padding-top: 80px;
+      font-size: 48px;
+    }
+    @media (max-width: $breakpoint-sm) {
+      padding-top: 60px;
+      font-size: 32px;
+    }
+    @media (max-width: $breakpoint-xs) {
+      padding-top: 40px;
+      font-size: 28px;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+
+    @media (max-width: $breakpoint-lg) {
+      font-size: 16px;
+      max-width: 550px;
+    }
+    @media (max-width: $breakpoint-md) {
+      max-width: 400px;
+    }
+    @media (max-width: $breakpoint-sm) {
+      font-size: 14px;
+      max-width: none;
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :first-child {
+      margin-right: 25px;
+    }
+    padding-top: 60px;
+
+    @media (max-width: $breakpoint-md) {
+      padding-top: 50px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      flex-wrap: wrap;
+    
+      :first-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  &__btn {
+    @media (max-width: $breakpoint-sm) {
+      flex: 1 1 100%;
+      min-width: 100%;
+      margin-top: 10px;
+    }
+  }
+  &__btn-arrow {
+    padding-top: 194px;
+    padding-bottom: 50px;
+    @media (max-width: $breakpoint-lg) {
+      padding-top: 120px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      padding-top: 100px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      padding-top: 60px;
+    }
+  }
+}

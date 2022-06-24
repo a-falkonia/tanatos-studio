@@ -1,0 +1,121 @@
+.section-works {
+    background: $white;
+    padding: 95px 0px;
+
+     @media (max-width: $breakpoint-lg) {
+      padding: 80px 0px;
+    }
+    @media (max-width: $breakpoint-md) {
+      padding: 50px 0px;
+    }
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: $primary;
+    font-size: 35px;
+    span {
+      color: $accent;
+    }
+  }
+  &__subtitle {
+    color: $primary;
+    max-width: 460px;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 26px;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 72px;
+
+    @media (max-width: $breakpoint-xl) {
+      justify-content: space-around;
+    }
+    @media (max-width: $breakpoint-lg) {
+      padding-top: 50px;
+    }
+    @media (max-width: $breakpoint-md) {
+      padding-top: 30px;
+    }
+
+  }
+  &__item {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    margin-right: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    @media (max-width: $breakpoint-xl) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      .works__item-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+  &__item-details {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background: rgba(247, 96, 14, 0.85);
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 75px 50px;
+  }
+  &__item-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  &__item-text {
+    padding-top: 15px;
+    padding-bottom: 45px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+
+  &__item-btn {
+    border: 1px solid $white;
+    color: $white;
+    &:hover {
+      background: $white;
+      color: $accent;
+    }
+  }
+  &__btn {
+    margin-top: 100px;
+    color: $primary;
+    border: 1px solid $secondary-light;
+
+    &:hover {
+      color: $white;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      margin-top: 80px;
+    }
+    @media (max-width: $breakpoint-md) {
+      margin-top: 50px;
+    }
+  }
+}

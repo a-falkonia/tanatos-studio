@@ -1,0 +1,147 @@
+.section-contact {
+    padding-top: 95px;
+    padding-bottom: 140px;
+
+    @media (max-width: $breakpoint-lg) {
+      padding: 80px 0px;
+    }
+    @media (max-width: $breakpoint-md) {
+      padding: 50px 0px;
+    }
+  }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: $white;
+    font-size: 35px;
+    span {
+      color: $accent;
+    }
+  }
+  &__subtitle {
+    color: $white;
+    max-width: 460px;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  form {
+    padding-top: 95px;
+    width: 73%;
+    margin: auto;
+    @media (max-width: $breakpoint-lg) {
+      padding: 80px 0px;
+    }
+    @media (max-width: $breakpoint-md) {
+      padding: 50px 0px;
+    }
+  }
+
+  &__form-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $breakpoint-lg) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__form-input {
+    flex: 1;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: $primary;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    
+
+    &:first-child {
+      margin-right: 30px;
+      @media (max-width: $breakpoint-lg) {
+        margin-right: 0px;
+      }
+    }
+    &:focus {
+      outline: 1px solid $accent;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      flex: 0 1 100%;
+      margin-right: 0px;
+      margin-top: 10px;
+    }
+  }
+
+  &__form-text {
+    resize: none;
+
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding-top: 15px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    color: $primary;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+
+    &:focus {
+      outline: 1px solid $accent;
+    }
+  }
+
+  &__buttons {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-md) {
+      flex-wrap: wrap;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    font-size: 16px;
+    @media (max-width: $breakpoint-md) {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__icons {
+    margin-top: 5px;
+    a {
+      &:not(:last-child) {
+        margin-right: 17px;
+
+        @media (max-width: $breakpoint-lg) {
+          margin-right: 10px;
+        }
+      }
+    }
+    @media (max-width: $breakpoint-md) {
+      margin-top: 20px;
+      flex: 0 1 100%;
+    }
+  }
+
+  &__btn {
+    color: $white;
+    background: $accent;
+    border: $accent;
+  }
+}
