@@ -14,17 +14,18 @@ body {
 }
 
 body {
-  min-width: $breakpoint-xs;
+  width: 100%;
+  min-width: 360px;
   font-family: 'Open Sans', sans-serif;
   color: $white;
   background-color: $primary;
+
   a {
     text-decoration: none;
   }
 }
 .container {
   margin: 0 auto;
-  width: 100%;
   max-width: ($containerWidth + $containerPadding) + px;
   padding: 0 $containerSidePadding + px;
 
@@ -37,7 +38,7 @@ body {
   }
 
   @media (max-width: $breakpoint-sm) {
-    max-width: none;
+    width: 100%;
   }
 }
 
@@ -60,12 +61,12 @@ body {
   background-size: cover;
 }
 .section-contact {
-    background-image: linear-gradient(
-        rgba(59, 67, 76, 0.9),
-        rgba(59, 67, 76, 0.8)
-      ),
-      url('../img/backgrounds/contact.png');
-    background-size: cover;
+  background-image: linear-gradient(
+      rgba(59, 67, 76, 0.9),
+      rgba(59, 67, 76, 0.8)
+    ),
+    url('../img/backgrounds/contact.png');
+  background-size: cover;
 }
 
 .btn {
@@ -87,6 +88,4 @@ body {
     background-color: $accent;
     transition: 0.3s all ease;
   }
-
 }
-
